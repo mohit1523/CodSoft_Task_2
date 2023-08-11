@@ -52,6 +52,17 @@ body{
     background-color: #040404;
 }
 
+.logo-div{
+    width: 33vw;
+    aspect-ratio: 1 / 1;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 2vh 2vw 2vh auto;
+}
+
 img{
-    width: 50vw;
+    width: 60vw;
 }

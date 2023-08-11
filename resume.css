@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.basic-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+
+.basic-details h1{
+    font-family: 'Rajdhani' , sans-serif;
+    font-size: 7vh;
+}
+
+.basic-details > div div{
+    margin: 1vh 0;
+    font-family: 'Rajdhani' , sans-serif;
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+.basic-details strong{
+    font-family: 'Raleway';
+    font-size: 2.5vh;
+}
+
+.basic-details img{
+    width: 10vw;
+    border: 1px solid;
+}
+
+.career-obj{
+    padding:4vh 0;
+}
+
+.career-obj h1{
+    font-family: 'Rajdhani';
+    padding: 0 3vw;
+}
+
+.career-obj ul{
+    padding: 2vh 3vw;
+    list-style-position: inside;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 600;
+}
+
+.career-obj li{
+    margin-bottom: 2vh;
+}
+
+.edu-qualifi{
+    padding:4vh 0;
+
+}
+
+.edu-qualifi h1{
+    font-family: 'Rajdhani' , sans-serif;
+    padding: 0 3vw;
+    margin: 2vh 0;
+}   
+
+.edu-qualifi table{
+    border-collapse: collapse;
+    margin: 0 3vw;
+    text-align: center;
+}
+
+.edu-qualifi table th{
+    background-color: aqua;
+    font-size: 4vh;
+    padding: 2vh 1vw;
+    font-family: 'Rajdhani' , sans-serif;
+}
+
+.edu-qualifi table td{
+    padding: 2vh 1vw;
+    font-size: 3vh;
+    font-family: 'Raleway' , sans-serif;
+}
+
+.skills{
+    padding:4vh 0;
+}
+
+.skills h1{
+    font-family: 'Rajdhani' , sans-serif;
+    padding: 0 3vw;
+    margin: 2vh 0;
+}  
+
+.skills div{
+    border-collapse: collapse;
+    margin: 0 3vw;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.skills div span{
+    font-size: 3vh;
+    background-color: aqua;
+    font-family: 'Rajdhani' , sans-serif;
+    margin: 1vh 0;
+    width: fit-content;
+    font-weight: 900;
+    padding: 2vh 3vw;
+    border-radius: 50vw;
+    border: 1px solid;
+}
+
+.achievements{
+    padding:4vh 0;
+}
+
+.achievements h1{
+    font-family: 'Rajdhani' , sans-serif;
+    padding: 0 3vw;
+    margin: 2vh 0;
+}  
+
+.achievements ul{
+    padding: 2vh 3vw;
+    list-style-position: inside;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 600;
+}
+
+.achievements li{
+    margin-bottom: 2vh;
+}
+
+.personal-details{
+    padding:4vh 0;
+}
+
+.personal-details h1{
+    font-family: 'Rajdhani' , sans-serif;
+    padding: 0 3vw;
+    margin: 2vh 0;
+}
+
+.personal-details table{
+    margin: 0 3vw;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+.personal-details table th{
+    font-size: 3vh;
+    padding: 2vh 1vw;
+    font-family: 'Rajdhani' , sans-serif;
+}
+
+.personal-details table td{
+    padding: 2vh 1vw;
+    font-size: 3vh;
+    font-family: 'Raleway' , sans-serif;
+}
+
+.declare{
+    padding:4vh 0;
+}
+
+.declare h3{
+    font-family: 'Rajdhani' , sans-serif;
+    padding: 0 3vw;
+}
+
+footer{
+    padding:4vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    padding: 0 3vw;
+    font-family: 'Rajdhani' , sans-serif;
+}
+
+footer h3{
+    margin-bottom: 1vh;
+}
