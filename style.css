@@ -12,12 +12,12 @@
 }
 
 .sub-div{
-    font-size: 4vw;
+    font-size: 8vh;
     overflow: hidden;
     transition: all .3s ease-in-out;
     border-right: 1px solid;
     width: fit-content;
-    padding: 2vh 0vw;
+    padding: 1vh 0vw;
     font-family: 'Audiowide' , sans-serif;
     letter-spacing: 5px;
     color: var(--secondary-color);
@@ -37,7 +37,7 @@ nav ul{
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2vw;
+    font-size: 4vh;
     font-family: arial;
 }
 
@@ -51,7 +51,7 @@ nav a{
 
 body{
     background-color: var(--secondary-color);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .intro-div{
@@ -60,6 +60,8 @@ body{
     font-family: 'Rajdhani' , sans-serif;
     align-items: center;
     justify-content: space-between;
+    height: 81vh;
+    border-bottom: 1px solid white;
 }
 
 .intro-div h2{
