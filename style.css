@@ -1,12 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    --primary-color: #ED6237;
+    --secondary-color: #040404;
 }
 
 #main{
     display: flex;
     justify-content: space-evenly;
-    background: linear-gradient(to right , #ED6237 10% , orange);
+    background: linear-gradient(to right , var(--primary-color) 10% , orange);
 }
 
 .sub-div{
@@ -18,11 +20,14 @@
     padding: 2vh 0vw;
     font-family: 'Audiowide' , sans-serif;
     letter-spacing: 5px;
-    color: #040404;
+    color: var(--secondary-color);
 }
 
 nav{
-    background-color: black;
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    height: 6vh;
 }
 
 nav ul{
@@ -39,17 +44,18 @@ nav ul{
 nav a{
     display: block;
     font-family: 'Montserrat Alternates', sans-serif;
-    color: #ED6237;
+    color: var(--primary-color);
     text-decoration: none;
     padding: 1vh 1vw;
 }
 
 body{
-    background-color: #040404;
+    background-color: var(--secondary-color);
+    overflow: hidden;
 }
 
 .intro-div{
-    color: #ED6237;
+    color: var(--primary-color);
     display: flex;
     font-family: 'Rajdhani' , sans-serif;
     align-items: center;
@@ -60,8 +66,8 @@ body{
     font-size: 5vh;
 }
 
-.intro-div h1{
-    font-size: 8vh;
+#name{
+    font-size: 10vh;
 }
 
 .details{
@@ -71,7 +77,6 @@ body{
 .logo-div{
     width: 33vw;
     aspect-ratio: 1 / 1;
-    /* border: 3px solid orange; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,4 +94,9 @@ body{
 #logo-section:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+#a{
+    background-color: limegreen;
+    height: 100vh;
 }
