@@ -18,11 +18,7 @@
     padding: 2vh 0vw;
     font-family: 'Audiowide' , sans-serif;
     letter-spacing: 5px;
-    background: linear-gradient(black , red);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #040404;
 }
 
 nav{
@@ -52,10 +48,29 @@ body{
     background-color: #040404;
 }
 
+.intro-div{
+    color: #ED6237;
+    display: flex;
+    font-family: 'Rajdhani' , sans-serif;
+    align-items: center;
+}
+
+.intro-div h2{
+    font-size: 5vh;
+}
+
+.intro-div h1{
+    font-size: 8vh;
+}
+
+.details{
+    padding: 0 3vw;
+}
+
 .logo-div{
     width: 33vw;
     aspect-ratio: 1 / 1;
-    border: 5px solid red;
+    /* border: 3px solid orange; */
     display: flex;
     align-items: center;
     justify-content: center;
