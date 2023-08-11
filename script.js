@@ -19,7 +19,6 @@ let animateFunc = () => {
     }
 };
 
-
 window.addEventListener("resize", animateFunc);
 
 window.addEventListener("load", animateFunc);

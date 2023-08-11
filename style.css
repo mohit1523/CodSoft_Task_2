@@ -53,6 +53,7 @@ body{
     display: flex;
     font-family: 'Rajdhani' , sans-serif;
     align-items: center;
+    justify-content: space-between;
 }
 
 .intro-div h2{
@@ -75,9 +76,17 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin: 2vh 2vw 2vh auto;
+    margin: 0 2vw;
+    position: relative;
 }
 
-img{
-    width: 60vw;
+#logo-section{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+#logo-section:hover{
+    opacity: 1;
+    cursor: pointer;
 }
