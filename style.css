@@ -6,29 +6,19 @@
     --secondary-color: #040404;
 }
 
-#main{
-    display: flex;
-    justify-content: space-evenly;
-    background: linear-gradient(to right , var(--primary-color) 10% , orange);
-}
 
-.sub-div{
-    font-size: 8vh;
+body{
+    background-color: var(--secondary-color);
     overflow: hidden;
-    transition: all .3s ease-in-out;
-    border-right: 1px solid;
-    width: fit-content;
-    padding: 1vh 0vw;
-    font-family: 'Audiowide' , sans-serif;
-    letter-spacing: 5px;
-    color: var(--secondary-color);
 }
 
+
+/* CODE FOR NAVBAR SECTION */
 nav{
     background-color: var(--secondary-color);
     position: sticky;
     top: 0;
-    height: 6vh;
+    height: 8vh;
 }
 
 nav ul{
@@ -40,21 +30,16 @@ nav ul{
     align-items: center;
     font-size: 3.5vh;
     font-family: arial;
+    height: 8vh;
 }
 
 nav a{
     display: block;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Audiowide' , sans-serif;
     color: var(--primary-color);
     text-decoration: none;
     padding: 1vh 1vw;
-    margin-top: 1vh;
     border-radius: 5px;
-}
-
-body{
-    background-color: var(--secondary-color);
-    overflow: hidden;
 }
 
 .intro-div{
@@ -63,7 +48,7 @@ body{
     font-family: 'Rajdhani' , sans-serif;
     align-items: center;
     justify-content: space-between;
-    height: 82vh;
+    height: 90vh;
 }
 
 .intro-div h2{
@@ -100,10 +85,34 @@ body{
     cursor: pointer;
 }
 
-#skills , #workspace , #about , #contact{
-    padding-top: 6vh;
+#skills , #workspace , #contact{
+    padding-top: 8vh;
     height: 100vh;
     color: aliceblue;
     display: flex;
 }
 
+#about{
+    padding-top: 8vh;
+    height: 100vh;
+    color: aliceblue;
+}
+
+/* CODE FOR MKP HEADING */
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right , var(--primary-color) 10% , orange);
+}
+
+.sub-div{
+    font-size: 8vh;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    border-right: 1px solid;
+    width: fit-content;
+    padding: 1vh 0vw;
+    font-family: 'Audiowide' , sans-serif;
+    letter-spacing: 5px;
+    color: var(--secondary-color);
+}
