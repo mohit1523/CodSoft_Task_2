@@ -1,3 +1,4 @@
+// CODE FOR MKP HEADING
 let sub_divs = document.querySelectorAll(".sub-div");
 let first_letter = document.querySelectorAll(".first-letter");
 let mainDiv = document.getElementById("main");
@@ -23,3 +24,25 @@ window.addEventListener("resize", animateFunc);
 
 window.addEventListener("load", animateFunc);
 
+// CODE FOR NAVBAR
+
+let navLinks = document.querySelectorAll("nav ul a");
+
+navLinks.forEach((element) => {
+  element.addEventListener("click", (e) => {
+
+    navLinks.forEach((elem) => {
+      if(element.innerHTML === 'Home'){
+        elem.style.backgroundColor = "transparent";
+      }
+      else if (elem === e.target) {
+        elem.style.backgroundColor = "white";
+      }
+       else {
+        elem.style.backgroundColor = "transparent";
+      }
+    });
+
+  });
+
+});

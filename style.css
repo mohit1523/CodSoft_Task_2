@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    scroll-behavior: smooth;
     padding: 0;
     --primary-color: #ED6237;
     --secondary-color: #040404;
@@ -37,7 +38,7 @@ nav ul{
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: arial;
 }
 
@@ -47,11 +48,13 @@ nav a{
     color: var(--primary-color);
     text-decoration: none;
     padding: 1vh 1vw;
+    margin-top: 1vh;
+    border-radius: 5px;
 }
 
 body{
     background-color: var(--secondary-color);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .intro-div{
@@ -60,8 +63,7 @@ body{
     font-family: 'Rajdhani' , sans-serif;
     align-items: center;
     justify-content: space-between;
-    height: 81vh;
-    border-bottom: 1px solid white;
+    height: 82vh;
 }
 
 .intro-div h2{
@@ -96,4 +98,10 @@ body{
 #logo-section:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+#skills , #workspace , #about , #contact{
+    padding-top: 6vh;
+    height: 100vh;
+    color: aliceblue;
 }
