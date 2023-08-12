@@ -4,6 +4,7 @@
   padding: 0;
   --primary-color: #ed6237;
   --secondary-color: #040404;
+  --accent-color: aliceblue;
 }
 
 body {
@@ -54,7 +55,7 @@ nav a {
 }
 
 #name {
-  font-size: 10vh;
+  font-size: 9vh;
 }
 
 .details {
@@ -89,7 +90,7 @@ nav a {
 #contact {
   padding-top: 8vh;
   height: 100vh;
-  color: aliceblue;
+  color: var(--accent-color);
 }
 
 #skills,
@@ -116,29 +117,124 @@ nav a {
   color: var(--secondary-color);
 }
 
-/* CODE FOR ABOUT SECTION */
+/* CODE FOR SKILLS SECTION */
+#skills table {
+  padding: 10vh 3vw;
+  text-align: left;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 3vh;
+}
 
-#contact h1{
+#skills th{
+  padding: 0vh 0 0 2vw;
+}
+
+#skills td {
+  padding: 0vh 0vw 3vh 2vw;
+}
+
+#skills progress {
+  accent-color: var(--primary-color);
+  height: 5vh;
+  width: 18vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#skills progress::before{
+  content: attr(value) '%';
+  position: absolute;
+  right: 1vw;
+  top: 1vh;
+  font-size: 80%;
+  font-family: 'Rajdhani' , sans-serif;
+  font-weight: 600;
+}
+
+.skills-text{
+  font-size: 10vh;
+  font-family: 'Passion One', cursive;
+  padding: 10vh 3vw;  
+}
+
+.comma1 img , .comma2 img{
+  transform: rotateZ(180deg);
+  height: 7vh;
+  filter: invert();
+  display: inline;
+} 
+
+.comma2 img{
+  transform: rotate(0);
+}
+
+/* CODE FOR ABOUT SECTION */
+#about .details-section{
+  display: flex;
+  padding: 5vh 3vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#about .details-section > div:first-child{
+  width: 60%;
+  padding-right: 4vw;
+}
+
+.profile{
+  width: 30vw;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--accent-color);
+  border-radius: 50vw;
+  overflow: hidden;
+  margin-bottom: 2vh;
+}
+
+.profile img{
+  width: 30vw;
+}
+
+/* CODE FOR CONTACT SECTION */
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact h1 {
   text-align: center;
   font-size: 19vh;
   margin-top: 10vh;
-  font-family: "audiowide";
+  font-family: "Audiowide", Arial;
   animation: blink 1s infinite ease-in-out;
 }
 
-#contact h1:hover{
-  text-shadow: 6px 5px 0 red , -6px -5px 0;
+@keyframes blink {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 6px 5px 0 var(--primary-color);
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 
-@keyframes blink {
-  0%{
-    text-shadow: none;
-  }
-  50%{
-    text-shadow: 6px 5px 0 var(--primary-color);
+.details-links , .social-links{
+  padding: 5vh 3vw;
+}
 
-  }
-  100%{
-    text-shadow: none;
-  }
+.details-links a , .social-links a{
+  text-decoration: none;
+  color: var(--primary-color);
+  -webkit-text-stroke: 1px orangered;
+  font-size: 8vh;
+  margin-right: 3vw;
+  transition: all .3s ease-in-out;
+}
+
+.details-links a:hover , .social-links a:hover{
+  text-shadow: 2px 2px 2px aliceblue;
 }

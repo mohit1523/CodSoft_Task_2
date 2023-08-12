@@ -32,14 +32,15 @@ navLinks.forEach((element) => {
   element.addEventListener("click", (e) => {
 
     navLinks.forEach((elem) => {
-      if(element.innerHTML === 'Home'){
-        elem.style.backgroundColor = "transparent";
-      }
-      else if (elem === e.target) {
-        elem.style.backgroundColor = "white";
+      // if(element.innerHTML === 'Home'){
+      //   elem.style.backgroundColor = "transparent";
+      // }
+      // else 
+      if (elem === e.target) {
+        elem.style.backgroundColor = "var(--accent-color)";
       }
        else {
-        elem.style.backgroundColor = "transparent";
+        elem.style.backgroundColor = "var(--secondary-color)";
       }
     });
 
