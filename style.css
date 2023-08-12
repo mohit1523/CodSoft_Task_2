@@ -127,18 +127,18 @@ nav a {
 }
 
 #contact h1:hover{
-  text-shadow: -6px -5px 0 red;
+  text-shadow: 6px 5px 0 red , -6px -5px 0;
 }
 
-/* @keyframes blink {
+@keyframes blink {
   0%{
     text-shadow: none;
   }
   50%{
-    text-shadow: 6px 5px 0 red;
+    text-shadow: 6px 5px 0 var(--primary-color);
 
   }
   100%{
     text-shadow: none;
   }
-} */
+}
