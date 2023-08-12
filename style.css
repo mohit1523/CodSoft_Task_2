@@ -104,4 +104,6 @@ body{
     padding-top: 6vh;
     height: 100vh;
     color: aliceblue;
+    display: flex;
 }
+
