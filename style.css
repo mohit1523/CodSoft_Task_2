@@ -1,115 +1,144 @@
-*{
-    margin: 0;
-    scroll-behavior: smooth;
-    padding: 0;
-    --primary-color: #ED6237;
-    --secondary-color: #040404;
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+  --primary-color: #ed6237;
+  --secondary-color: #040404;
 }
 
-
-body{
-    background-color: var(--secondary-color);
-    overflow: hidden;
+body {
+  background-color: var(--secondary-color);
+  overflow: hidden;
 }
-
 
 /* CODE FOR NAVBAR SECTION */
-nav{
-    background-color: var(--secondary-color);
-    position: sticky;
-    top: 0;
-    height: 8vh;
+nav {
+  background-color: var(--secondary-color);
+  position: sticky;
+  top: 0;
+  height: 8vh;
 }
 
-nav ul{
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 3.5vh;
-    font-family: arial;
-    height: 8vh;
+nav ul {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3.5vh;
+  font-family: arial;
+  height: 8vh;
 }
 
-nav a{
-    display: block;
-    font-family: 'Audiowide' , sans-serif;
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 1vh 1vw;
-    border-radius: 5px;
+nav a {
+  display: block;
+  font-family: "Audiowide", sans-serif;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 1vh 1vw;
+  border-radius: 5px;
 }
 
-.intro-div{
-    color: var(--primary-color);
-    display: flex;
-    font-family: 'Rajdhani' , sans-serif;
-    align-items: center;
-    justify-content: space-between;
-    height: 90vh;
+.intro-div {
+  color: var(--primary-color);
+  display: flex;
+  font-family: "Rajdhani", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
 }
 
-.intro-div h2{
-    font-size: 5vh;
+.intro-div h2 {
+  font-size: 5vh;
 }
 
-#name{
-    font-size: 10vh;
+#name {
+  font-size: 10vh;
 }
 
-.details{
-    padding: 0 3vw;
+.details {
+  padding: 0 3vw;
 }
 
-.logo-div{
-    width: 33vw;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0 2vw;
-    position: relative;
+.logo-div {
+  width: 33vw;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 2vw;
+  position: relative;
 }
 
-#logo-section{
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
+#logo-section {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 }
 
-#logo-section:hover{
-    opacity: 1;
-    cursor: pointer;
+#logo-section:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-#skills , #workspace , #about , #contact{
-    padding-top: 8vh;
-    height: 100vh;
-    color: aliceblue;
+#skills,
+#workspace,
+#about,
+#contact {
+  padding-top: 8vh;
+  height: 100vh;
+  color: aliceblue;
 }
 
-#skills , #workspace{
-    display: flex;
+#skills,
+#workspace {
+  display: flex;
 }
 
 /* CODE FOR MKP HEADING */
-#main{
-    display: flex;
-    justify-content: space-evenly;
-    background: linear-gradient(to right , var(--primary-color) 10% , orange);
+#main {
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(to right, var(--primary-color) 10%, orange);
 }
 
-.sub-div{
-    font-size: 8vh;
-    overflow: hidden;
-    transition: all .3s ease-in-out;
-    border-right: 1px solid;
-    width: fit-content;
-    padding: 1vh 0vw;
-    font-family: 'Audiowide' , sans-serif;
-    letter-spacing: 5px;
-    color: var(--secondary-color);
+.sub-div {
+  font-size: 8vh;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-right: 1px solid;
+  width: fit-content;
+  padding: 1vh 0vw;
+  font-family: "Audiowide", sans-serif;
+  letter-spacing: 5px;
+  color: var(--secondary-color);
 }
+
+/* CODE FOR ABOUT SECTION */
+
+#contact h1{
+  text-align: center;
+  font-size: 19vh;
+  margin-top: 10vh;
+  font-family: "audiowide";
+  animation: blink 1s infinite ease-in-out;
+}
+
+#contact h1:hover{
+  text-shadow: -6px -5px 0 red;
+}
+
+/* @keyframes blink {
+  0%{
+    text-shadow: none;
+  }
+  50%{
+    text-shadow: 6px 5px 0 red;
+
+  }
+  100%{
+    text-shadow: none;
+  }
+} */
