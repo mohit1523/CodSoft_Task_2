@@ -85,17 +85,14 @@ nav a{
     cursor: pointer;
 }
 
-#skills , #workspace , #contact{
+#skills , #workspace , #about , #contact{
     padding-top: 8vh;
     height: 100vh;
     color: aliceblue;
-    display: flex;
 }
 
-#about{
-    padding-top: 8vh;
-    height: 100vh;
-    color: aliceblue;
+#skills , #workspace{
+    display: flex;
 }
 
 /* CODE FOR MKP HEADING */
