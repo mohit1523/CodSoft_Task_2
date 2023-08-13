@@ -22,7 +22,19 @@ let animateFunc = () => {
 
 window.addEventListener("resize", animateFunc);
 
-window.addEventListener("load", animateFunc);
+window.addEventListener("load", () => {
+  animateFunc();
+  let url = window.location.href;
+  let hashPos = url.indexOf('#') + 1;
+  let hashStr = url.substring(hashPos);
+  if(hashStr === 'top'){
+    hashStr = 'home';
+  }
+  hashStr += '-link';
+  document.getElementById(hashStr).style.backgroundColor = "var(--accent-color)";
+
+  console.log(hashStr);
+});
 
 // CODE FOR NAVBAR
 
