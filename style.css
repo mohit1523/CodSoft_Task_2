@@ -121,11 +121,11 @@ nav a {
 #skills table {
   padding: 10vh 3vw;
   text-align: left;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 3vh;
 }
 
-#skills th{
+#skills th {
   padding: 0vh 0 0 2vw;
 }
 
@@ -142,46 +142,51 @@ nav a {
   align-items: center;
 }
 
-#skills progress::before{
-  content: attr(value) '%';
+#skills progress::before {
+  content: attr(value) "%";
   position: absolute;
   right: 1vw;
   top: 1vh;
   font-size: 80%;
-  font-family: 'Rajdhani' , sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 600;
 }
 
-.skills-text{
+.skills-text {
   font-size: 10vh;
-  font-family: 'Passion One', cursive;
-  padding: 10vh 3vw;  
+  font-family: "Passion One", cursive;
+  padding: 10vh 3vw;
 }
 
-.comma1 img , .comma2 img{
+.comma1 img,
+.comma2 img {
   transform: rotateZ(180deg);
   height: 7vh;
   filter: invert();
   display: inline;
-} 
+}
 
-.comma2 img{
+.comma2 img {
   transform: rotate(0);
 }
 
 /* CODE FOR ABOUT SECTION */
-#about .details-section{
+#about .details-section {
   display: flex;
   padding: 5vh 3vw;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
-#about .details-section > div:first-child{
+#about .details-section > div:first-child {
   width: 60%;
   padding-right: 4vw;
 }
 
-.profile{
+#about .details-section > div:last-child {
+  width: 40vw;
+}
+
+.profile {
   width: 30vw;
   aspect-ratio: 1 / 1;
   border: 1px solid var(--accent-color);
@@ -190,13 +195,21 @@ nav a {
   margin-bottom: 2vh;
 }
 
-.profile img{
+.profile img {
   width: 30vw;
+}
+
+#about ul {
+  list-style: square;
+}
+
+#about ul li {
+  margin-top: 5px;
 }
 
 /* CODE FOR CONTACT SECTION */
 
-#contact{
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -222,19 +235,55 @@ nav a {
   }
 }
 
-.details-links , .social-links{
+.details-links,
+.social-links {
   padding: 5vh 3vw;
 }
 
-.details-links a , .social-links a{
+.con-links {
   text-decoration: none;
   color: var(--primary-color);
-  -webkit-text-stroke: 1px orangered;
   font-size: 8vh;
   margin-right: 3vw;
-  transition: all .3s ease-in-out;
+  position: relative;
 }
 
-.details-links a:hover , .social-links a:hover{
-  text-shadow: 2px 2px 2px aliceblue;
+.con-links:hover {
+  animation: shadow 1s ease-in infinite;
+  -webkit-text-stroke: 1px var(--secondary-color);
+}
+
+.con-links::before{
+  content: attr(id);
+  position: absolute;
+  top: -25px;
+  left: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 16% 75%, 0 100%, 0 75%, 0% 75%);
+  font-size: 10px;
+  padding: 3px;
+  padding-bottom: 9px;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  font-family: 'Rajdhani' , sans-serif;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.con-links:hover::before{
+  -webkit-text-stroke: 0;
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes shadow {
+  0% {
+    text-shadow: 0px 0px 0 var(--accent-color);
+  }
+  50% {
+    text-shadow: 2px 2px 0 var(--accent-color);
+  }
+  100% {
+    text-shadow: 0px 0px 0 var(--accent-color);
+  }
 }
