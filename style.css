@@ -175,6 +175,23 @@ nav a {
   transform: rotate(0);
 }
 
+/* CODE FOR WORKSPACE SECTION */
+
+#workspace{
+  flex-direction: column;
+}
+
+#workspace > div{
+  padding: 0 3vw;
+}
+
+#workspace iframe{
+  border: 1px solid var(--accent-color);
+  height: 60vh;
+  margin: 5vh 3vw;
+  background-color: white;
+}
+
 /* CODE FOR ABOUT SECTION */
 #about .details-section {
   display: flex;
