@@ -7,6 +7,11 @@
   --accent-color: aliceblue;
 }
 
+*::selection{
+  background-color: red;
+  color: black;
+}
+
 body {
   background-color: var(--secondary-color);
   overflow: hidden;
@@ -205,6 +210,26 @@ nav a {
 
 #about ul li {
   margin-top: 5px;
+}
+
+.resume-btn{
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 900;
+  transition: all .3s ease-in-out;
+}
+
+.resume-btn:hover{
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 var(--accent-color);
+}
+
+.resume-btn a{
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 /* CODE FOR CONTACT SECTION */
