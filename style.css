@@ -178,18 +178,60 @@ nav a {
 /* CODE FOR WORKSPACE SECTION */
 
 #workspace{
-  flex-direction: column;
+  /* flex-direction: column; */
+  padding: 12vh 3vw;
+  justify-content: space-between;
 }
 
-#workspace > div{
-  padding: 0 3vw;
+#workspace  h1{
+  font-family: 'Rajdhani' , sans-serif;
+  text-decoration: underline;
+  padding-bottom: 2vh;
+  text-underline-offset: 10px;
+  color: var(--primary-color);
+}
+
+#workspace > div a{
+  text-decoration: none;
+  color: var(--accent-color);
+  display: block;
+  padding: 1vh 1vw;
+  font-size: 5vh;
+  font-family: "Passion One", cursive;
+  margin: 5px;
+  position: relative;
+  width: fit-content;
+}
+
+#workspace > div a::before{
+  content: '';  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ed6237;
+  z-index: -2;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+#workspace > div a:hover::before{
+  width: 100%;
+}
+
+.web-frame{
+  padding-bottom: 8vh;
 }
 
 #workspace iframe{
   border: 1px solid var(--accent-color);
-  height: 60vh;
-  margin: 5vh 3vw;
+  width: 50vw;
+  height: 90%;
   background-color: white;
+}
+
+#workspace iframe{
+  font-family: arial;
 }
 
 /* CODE FOR ABOUT SECTION */
