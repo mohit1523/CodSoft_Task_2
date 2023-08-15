@@ -371,10 +371,6 @@ nav a {
 /* CODE FOR RESPONSIVENESS */
 
 @media screen and (max-width: 650px) {
-  body {
-    overflow: visible;
-  }
-
   nav {
     position: sticky;
     top: 5px;
